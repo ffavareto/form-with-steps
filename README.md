@@ -1,6 +1,4 @@
 # Formulário com steps - Angular 17 & Angular Material
-![Step 1](assets/step-1.png)
-![Step 2](assets/step-2.png)
 Esse projeto consiste em um formulário com steps utilizando roteamento para navegação entre eles.
 
 ## Funcionalidades
