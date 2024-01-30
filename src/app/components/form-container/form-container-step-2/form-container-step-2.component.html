@@ -1,0 +1,22 @@
+<form [formGroup]="form">
+  <div class="form-fields">
+    <h3>Endereço</h3>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Logradouro</mat-label>
+      <input matInput formControlName="address">
+      <mat-icon matSuffix>home</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Cidade</mat-label>
+      <input matInput formControlName="city">
+      <mat-icon matSuffix>home</mat-icon>
+    </mat-form-field>
+
+    <div class="buttons">
+      <button mat-stroked-button routerLink="../step-1">Voltar</button>
+      <button mat-stroked-button color="primary" (click)="submit()">Enviar</button>
+    </div>
+  </div>
+</form>

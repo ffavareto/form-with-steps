@@ -1,0 +1,28 @@
+<form [formGroup]="form">
+    <div class="form-fields">
+        <h3>Informações pessoais</h3>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nome</mat-label>
+            <input matInput formControlName="firstName">
+            <mat-icon matSuffix>badge</mat-icon>
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline">
+            <mat-label>Sobrenome</mat-label>
+            <input matInput formControlName="lastName">
+            <mat-icon matSuffix>badge</mat-icon>
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline">
+            <mat-label>Data de Nascimento</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="birthDate">
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <div class="button-container">
+            <button mat-stroked-button color="primary" routerLink="../step-2">Próximo</button>
+        </div>
+    </div>
+</form>

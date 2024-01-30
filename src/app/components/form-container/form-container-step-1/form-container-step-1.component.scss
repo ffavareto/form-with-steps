@@ -1,0 +1,17 @@
+form {
+    padding: 16px;
+
+    .form-fields {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        width: 50%;
+        margin: auto;
+    }
+
+    .button-container {
+        margin-top: 16px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
